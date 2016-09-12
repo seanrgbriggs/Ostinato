@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{84019480-FF94-3EC0-53FE-599A8B256E09}") = "Ostinato", "Assembly-CSharp.csproj", "{17F29312-82A2-D7E5-1EB5-F8B3ED206167}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17F29312-82A2-D7E5-1EB5-F8B3ED206167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F29312-82A2-D7E5-1EB5-F8B3ED206167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F29312-82A2-D7E5-1EB5-F8B3ED206167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F29312-82A2-D7E5-1EB5-F8B3ED206167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
