@@ -47,6 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\ButtonHandlerScript.cs" />
      <Compile Include="Assets\ButtonScript.cs" />
+     <Compile Include="Assets\GameController.cs" />
+     <Compile Include="Assets\Note.cs" />
      <Compile Include="Assets\ReticleScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
