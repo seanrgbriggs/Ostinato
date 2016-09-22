@@ -30,6 +30,8 @@ public class ButtonScript : MonoBehaviour
 	// Update is called once per frame
 	public void onPress ()
 	{
+		if (GetComponentInChildren<Text> ().color != Color.black)
+			return;
 		ButtonHandlerScript parScript = GetComponentInParent<ButtonHandlerScript> ();
 		parScript.Message (rightAnswer);
 	}

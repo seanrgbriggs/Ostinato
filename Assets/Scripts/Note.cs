@@ -66,7 +66,18 @@ public class Note
 	public static Note[] getRandNoteArr(int desOctave, int len, int range){
 		Note center = getRandNote (desOctave);
 		Note[] output = new Note[len];
-		
+
+		int centerpoint = Random.Range (0, len - 1);
+		output [centerpoint] = center;
+
+		for (int i = centerpoint - 1; i >= 0; i--) {
+			output [i] = new Note (output [i + 1].getOctave (), output [i + 1].getNote () - range);
+		}
+
+		for (int i = centerpoint + 1; i < len; i++) {
+			output [i] = new Note (output [i - 1].getOctave (), output [i - 1].getNote () + range);
+		}
+		/*
 		for (int i = 0; i < len; i++) {
 			
 			Note toAdd = null;
@@ -82,7 +93,7 @@ public class Note
 			}
 
 			output [i] = toAdd;
-		}
+		}*/
 
 		return output;
 	}

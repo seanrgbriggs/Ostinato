@@ -17,14 +17,18 @@ public class ButtonHandlerScript : MonoBehaviour {
 	void AssignNotes(){
 
 		Note[] notes = gm.getNoteArr ();
+		int rightAnswer;
+
 		for (int i = 0; i < buttons.Length; i++) {
 			buttons [i].Reset ();
 			buttons [i].setText (notes [i].ToString ());
-			buttons [i].setCorrect (false);
+			if (notes [i] == gm.getNote ()) {
+				rightAnswer = i;
+				buttons [i].setCorrect (true);
+			} else {
+				buttons [i].setCorrect (false);
+			}
 		}
-
-		int rightAnswer = Random.Range (0, buttons.Length);
-		buttons [rightAnswer].setCorrect (true);
 
 	}
 

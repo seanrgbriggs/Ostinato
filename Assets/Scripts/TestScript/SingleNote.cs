@@ -12,12 +12,11 @@ public class SingleNote : MonoBehaviour {
 
 	float curTime;
 
-	Text text;
+	public Text text;
 
 	// Use this for initialization
 	void Start () {
 		aso = GetComponent<AudioSource> ();
-		text = GetComponentInChildren<Text> ();
 
 		int[] noteInts = { 0, 2, 4, 5, 7, 9, 11, 12, 12, 11, 9, 7, 5, 4, 2, 0 };
 		scale = new Note[noteInts.Length];
