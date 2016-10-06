@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/NoteTraining.unity
+- path: Assets/NoteTrainingEx.unity
   isLoaded: 1
   isActive: 1

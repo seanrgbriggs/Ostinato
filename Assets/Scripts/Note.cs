@@ -8,7 +8,7 @@ public class Note
 	private int octave;
 	private int note;
 
-	private string[] noteStrs = { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
+	private static string[] noteStrs = { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
 
 	public Note(int o, int n){
 		octave = o;
@@ -59,7 +59,7 @@ public class Note
 		return !(n1 == n2);
 	}
 
-	private static Note getRandNote(int desOctave){
+	public static Note getRandNote(int desOctave){
 		return new Note(desOctave, Random.Range(0,11)); //there are 12 distinct notes in an octave
 	}
 

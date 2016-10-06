@@ -17,6 +17,7 @@ public class ButtonScript : MonoBehaviour
 		cr.SetAlpha (0);
 		rightAnswer = false;
 		GetComponentInChildren<Text> ().text = "";
+		
 	}
 
 	void Update(){

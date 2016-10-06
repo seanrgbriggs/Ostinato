@@ -4,9 +4,6 @@ using System.Collections;
 
 public class MenuScript : MonoBehaviour {
 
-	public string gameSceneName;
-	public string tutSceneName;
-
 	// Use this for initialization
 	void Start () {
 		Screen.SetResolution (Screen.currentResolution.height * 9 / 16, Screen.currentResolution.height, false); //creates a vertical game screen,
@@ -27,5 +24,9 @@ public class MenuScript : MonoBehaviour {
 
 	public void startTutorial(){
 		SceneManager.LoadScene (2);
+	}
+
+	public void startTraining(){
+		SceneManager.LoadScene (3);
 	}
 }

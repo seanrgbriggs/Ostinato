@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ForkScript.cs" />
+     <Compile Include="Assets\LevelUpTextScript.cs" />
      <Compile Include="Assets\Scripts\ButtonHandlerScript.cs" />
      <Compile Include="Assets\Scripts\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
@@ -52,6 +54,7 @@
      <Compile Include="Assets\Scripts\Note.cs" />
      <Compile Include="Assets\Scripts\ReticleScript.cs" />
      <Compile Include="Assets\Scripts\TestScript\SingleNote.cs" />
+     <Compile Include="Assets\Scripts\TestScript\TestButtonScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
